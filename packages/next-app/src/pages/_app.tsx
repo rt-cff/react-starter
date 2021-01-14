@@ -1,5 +1,5 @@
 import { MyApp } from '../app/components/my-app';
 
-import '../styles/globals.css';
+//import globally-applied css here
 
 export default MyApp;
