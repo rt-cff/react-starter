@@ -79,6 +79,37 @@
     "@typescript-eslint/unified-signatures": "error",
     "@typescript-eslint/naming-convention": "error"
   },
+  "overrides": [
+    {
+      "files": ["*.tsx"],
+      "rules": {
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "selector": "default",
+            "format": ["camelCase"],
+            "leadingUnderscore": "allow",
+            "trailingUnderscore": "allow"
+          },
+          {
+            "selector": "variable",
+            "format": ["camelCase", "UPPER_CASE", "PascalCase"],
+            "leadingUnderscore": "allow",
+            "trailingUnderscore": "allow"
+          },
+          {
+            "selector": ["parameter", "function", "typeProperty"],
+            // to allow passing react component as function parameter
+            "format": ["camelCase", "PascalCase"]
+          },
+          {
+            "selector": "typeLike",
+            "format": ["PascalCase"]
+          }
+        ]
+      }
+    }
+  ],
   "settings": {
     "react": {
       "version": "detect"
