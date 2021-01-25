@@ -21,6 +21,7 @@
     "url": "git+https://github.com/rt-cff/react-starter.git"
   },
   "scripts": {
+    "dev": "tsc --watch",
     "build": "tsc",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
