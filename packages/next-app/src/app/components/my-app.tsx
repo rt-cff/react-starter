@@ -4,6 +4,8 @@ import Head from 'next/head';
 import { APPLICATION_TITLE, APPLICATION_ICON } from '../configs/app-configs';
 import { PageContianer } from './page-container';
 
+import 'antd/dist/antd.css';
+
 export const MyApp: FC<AppProps> = (props: AppProps) => (
   <>
     <Head>
